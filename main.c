@@ -104,7 +104,7 @@ struct Path dijkstra(int adjacency[MAX][MAX], int nodes, int starting_node, int 
     visited[starting_node] = true;
     count = 1;
 
-
+    // for each possible neighbour
     while (count < nodes - 1) {
         min_distance = INFINITY;
 
