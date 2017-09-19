@@ -5,7 +5,7 @@
 #include "../include/dijkstra.h"
 #include "../include/IO_dijkstra.h"
 
-int is_valid_node(int node, int max);
+int are_valid_nodes(int node_a, int node_b, int max);
 
 /*
  * USAGES:
