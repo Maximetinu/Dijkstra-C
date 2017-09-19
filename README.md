@@ -1,4 +1,4 @@
-# Dijkstra-C
+# Dijkstra C
 Dijkstra algorithm implementation in C. Provides the possibility of reading the adjacency matrix from file input, and generate another file as output; or reading and printing via terminal.
 
 [Algorithm description](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
