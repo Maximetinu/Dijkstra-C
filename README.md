@@ -4,7 +4,7 @@ Dijkstra algorithm implementation in C. Provides the possibility of reading the 
 [Algorithm description](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
 ## Current features
 - Dijkstra shortest path algorithm implementarion, through an adjacency graph, directed or bidirectional.
-- Supports both input and ouput via terminal and via files.
+- Supports both input and ouput via terminal and files.
 - Supports CSV files representing the adjacency graph input. Don't be shy and use spreadsheets to create huges graphs!
 - Supports drawing computed shortest path as output.
 - Supports differents usages, one of them non verbosing, ideal for repeating program execution in a set of files.
