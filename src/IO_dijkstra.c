@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../include/IO_dijkstra.h"
+#define FILE_MAX 8192
 
 void input_nodes(struct Dijkstra_input *input);
 
@@ -76,7 +77,7 @@ int input_from_file(char *filename, struct Dijkstra_input *input) {
     while ((line = fgets(buffer, sizeof(buffer), fstream)) != NULL) {
         record = strtok(line, ";");
         while (record != NULL) {
-            input->adjacency[i][j] = (int) (record);
+            input->adjacency[i][j] = atoi(record);
             j++;
             record = strtok(NULL, ";");
         }
@@ -119,6 +120,7 @@ void print_dijkstra_input(struct Dijkstra_input *input) {
 }
 
 int output_to_file(char *filename, struct Dijkstra_output *output) {
+    strcat(filename,".txt");
     FILE *f = fopen(filename, "w");
     if (f == NULL) {
         printf("Error opening file!\n");
@@ -132,6 +134,7 @@ int output_to_file(char *filename, struct Dijkstra_output *output) {
     }
     fprintf(f, "\nTotal distance: %d", output->distance);
 
+    filename[strlen(filename)-4] = 0;
     fclose(f);
     return 1;
 }

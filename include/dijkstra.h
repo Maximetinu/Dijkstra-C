@@ -5,7 +5,7 @@
 #ifndef DIJKSTRA_DIJKSTRA_H
 #define DIJKSTRA_DIJKSTRA_H
 #define NODES_MAX 10
-#define FILE_MAX 8192
+
 // struct descripting a path, wich will be the shortest path calculated by Dijkstra
 struct Dijkstra_output {
     int distance;
