@@ -69,7 +69,7 @@ int main(int argc, char **argv) {
         return -1;
 
     // GRAPHIC OUTPUT TO IMAGE
-    if ((argc == 2 || argc == 4) && system("which dot") == 0) {
+    if ((argc == 2 || argc == 4) && system("which dot >/dev/null") == 0) {
         draw_solution_to_image(&input, &output, argv[2]);
     } else if (system("which dot") == 256){
         printf("\nUnable to draw the graph path through \"dot\" command. Please, install the package graphviz.");
