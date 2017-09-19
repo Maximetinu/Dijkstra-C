@@ -62,7 +62,7 @@ int input_from_file(char *filename, struct Dijkstra_input *input) {
     char buffer[FILE_MAX];
     char *record, *line;
     FILE *fstream;
-    int i, j = 0;
+    int i = 0, j = 0;
     int columns = 0;
     bool columns_found = false;
 
@@ -76,7 +76,7 @@ int input_from_file(char *filename, struct Dijkstra_input *input) {
     while ((line = fgets(buffer, sizeof(buffer), fstream)) != NULL) {
         record = strtok(line, ";");
         while (record != NULL) {
-            input->adjacency[i][j] = (record);
+            input->adjacency[i][j] = (int) (record);
             j++;
             record = strtok(NULL, ";");
         }

@@ -20,5 +20,7 @@ struct Dijkstra_input {
     int starting_node;
     int target_node;
 };
+
 struct Dijkstra_output dijkstra(struct Dijkstra_input *input);
+
 #endif //DIJKSTRA_DIJKSTRA_H

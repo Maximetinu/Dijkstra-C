@@ -15,14 +15,14 @@ int are_valid_nodes(int node_a, int node_b, int max);
  *      ./program <input_csv_filename> <output_filename> <starting_node> <target_node>
  */
 
-int main(int argc, char **argv){
+int main(int argc, char **argv) {
     struct Dijkstra_input input;
 
     int IO_success = 1;
 
     // INPUT
     argc--; // ignoring filename argument for more visual switch case...
-    switch (argc){
+    switch (argc) {
         case 1:
             IO_success = input_from_file_nodes_by_keyboard(argv[1], &input);
             break;
@@ -46,12 +46,12 @@ int main(int argc, char **argv){
     output = dijkstra(&input);
 
     // OUTPUT
-    switch (argc){
+    switch (argc) {
         case 2:
-            IO_success = output_to_file(argv[2],&output);
+            IO_success = output_to_file(argv[2], &output);
             break;
         case 4:
-            IO_success = output_to_file(argv[2],&output);
+            IO_success = output_to_file(argv[2], &output);
             break;
         default:
             print_dijkstra_ouput(&output);
@@ -63,7 +63,7 @@ int main(int argc, char **argv){
     return 0;
 }
 
-int are_valid_nodes(int node_a, int node_b, int max){
+int are_valid_nodes(int node_a, int node_b, int max) {
     int valid = 1;
     if (node_a < 0)
         valid = 0;
@@ -81,5 +81,5 @@ int are_valid_nodes(int node_a, int node_b, int max){
 
 
 // TODO: graphic_output_to_[window][plotting graph][image]
-    // --> TODO First: generate .dot file
-    // --> TODO Second: use library to get image from .dot file
+// --> TODO First: generate .dot file
+// --> TODO Second: use library to get image from .dot file

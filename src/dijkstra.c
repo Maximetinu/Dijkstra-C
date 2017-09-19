@@ -7,7 +7,6 @@
 #define INFINITY 9999
 
 
-
 struct Dijkstra_output dijkstra(struct Dijkstra_input *input) {
 
     int costs[NODES_MAX][NODES_MAX];
@@ -16,7 +15,7 @@ struct Dijkstra_output dijkstra(struct Dijkstra_input *input) {
     bool visited[NODES_MAX];
     int count;
     int min_distance;
-    int next_node;
+    int next_node = 0;
 
     // costs[] stores the distances from node i to node j
     // distances_to_source[i] stores the distances of predecessors[i] to the source node
