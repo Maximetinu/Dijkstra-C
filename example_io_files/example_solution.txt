@@ -1,0 +1,2 @@
+Shortest path calculated by Dijkstra:  0-->3-->2-->4
+Total distance: 60
