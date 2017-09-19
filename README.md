@@ -10,7 +10,7 @@ Dijkstra algorithm implementation in C. Provides the possibility of reading the 
 - Supports differents usages, one of them non verbosing, ideal for repeating program execution in a set of files.
 - Applies segregations of concerns, separating logic from algorithm and from input/output through 3 main public interfaces:
     - `dijkstra.h`, responsible of algorithm calculation. Completely reusable.
-    - `IO_dijkstra.h`, utilities for reading algorithm input via keyboard and printing output to terminal or files
+    - `IO_dijkstra.h`, utilities for reading algorithm input via keyboard and printing output to terminal or files.
     - `graph_drawer.h`, not a drawer actually, but has the responsability of calling the actual graph drawer, [graphviz](http://www.graphviz.org/).
 ## Graph output example
 ![Graph shortest path example](https://raw.githubusercontent.com/Maximetinu/Dijkstra-C/master/example_io_files/example_solution.png "Logo Title Text 1")
