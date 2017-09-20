@@ -47,8 +47,10 @@ int main(int argc, char **argv) {
             input = input_by_terminal();
     }
 
-    if (!IO_success)
+    if (!IO_success) {
+        perror("Invalid argument exception");
         return -1;
+    }
 
     struct Dijkstra_output output;
     output = dijkstra(&input);
@@ -65,14 +67,16 @@ int main(int argc, char **argv) {
             print_dijkstra_ouput(&output);
     }
 
-    if (!IO_success)
+    if (!IO_success) {
+        perror("Invalid argument exception");
         return -1;
+    }
 
     // GRAPHIC OUTPUT TO IMAGE
     if ((argc == 2 || argc == 4) && system("which dot >/dev/null") == 0) {
         draw_solution_to_image(&input, &output, argv[2]);
-    } else if (system("which dot") == 256){
-        printf("\nUnable to draw the graph path through \"dot\" command. Please, install the package graphviz.");
+    } else if (system("which dot >/dev/null") == 256){
+        perror("\nUnable to draw the graph path through \"dot\" command. Please, install the package graphviz.");
     }
 
     return 0;
