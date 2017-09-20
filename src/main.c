@@ -92,8 +92,3 @@ int are_valid_nodes(int node_a, int node_b, int max) {
         valid == 0;
     return valid;
 }
-
-
-// TODO: graphic_output_to_[window][plotting graph][image]
-// --> TODO First: generate .dot file
-// --> TODO Second: use library to get image from .dot file
