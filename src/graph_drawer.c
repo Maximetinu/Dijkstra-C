@@ -21,6 +21,7 @@ int sucessors_in_solution(int i, int j, struct Dijkstra_output *output) {
     return i_follows_j + j_follows_i;
 }
 
+// Building graph.dot based on echo "digraph G {Hello->World}" | dot -Tpng >hello.png
 void draw_solution_to_image(struct Dijkstra_input *input, struct Dijkstra_output *output, char *filename_out) {
     //TODO: beautify this code
     char graph_command[GRAPH_COMMAND_MAX] = "echo \"digraph G {\n";
