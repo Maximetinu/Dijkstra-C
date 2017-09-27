@@ -25,3 +25,7 @@ Create folders structure with `make folders`. Compiling and linking with `make`.
     ./program <input_csv_filename> <output_filename> <starting_node> <target_node
 ## Credits
 Proghetto per il corso Fondamenti di Informatica, Università Degli Studi di Firenze. Unlicensed.
+
+## License
+[The Unlicense](http://unlicense.org/). Software released into the public domain, no rights reserved.
+
