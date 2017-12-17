@@ -14,6 +14,9 @@ Dijkstra algorithm implementation in C. Provides the possibility of reading the 
     - `graph_drawer.h`, not a drawer actually, but has the responsability of calling the actual graph drawer, [graphviz](http://www.graphviz.org/).
 ## Graph output example
 ![Graph shortest path example](https://raw.githubusercontent.com/Maximetinu/Dijkstra-C/master/example_io_files/example_solution.png "Logo Title Text 1")
+## Graphviz dependencies
+- In order to generate the graph image as output, this software uses the command 'dot', which is part of graphviz package.
+- In case of not having graphviz installed, the image won't be generated.
 ## Compiling
 Create folders structure with `make folders`. Compiling and linking with `make`.
 ## Usages
